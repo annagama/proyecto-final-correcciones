@@ -1,4 +1,4 @@
-const hg=require("C:\Users\BEMA\Desktop\node_modules\STORE\src\hg\index.js");
+const hg=require('..src\hg\index.js');
 const{querytypes}=require("sequelize");
 const getadmin=async(email)=>{
     try{
