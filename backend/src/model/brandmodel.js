@@ -1,12 +1,12 @@
-const hg=require('..src\hg\index.js);
+const db=require("../db");
 const{querytype}=require("sequelize");
 const getall=()=>{
-    return hg.query("seleccione marca",{
-        type:querytype.seleccione
+    return db.query('select * from marca',{
+        type:querytype.select
     });
 }
 const getbrand=(id)=>{
-    return hg.query("seleccione marca ${id}",{
+    return db.query('select * from marca ${id}',{
         type:querytype.seleccione
     });
 }
