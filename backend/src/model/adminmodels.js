@@ -1,8 +1,8 @@
-const hg=require('..src\hg\index.js');
+const hg=require('..db\index.js');
 const{querytypes}=require("sequelize");
 const getadmin=async(email)=>{
     try{
-        const result=await hg.query("seleccione email ${email}",{type:querytypes.seleccione});
+        const result=await hg.query('select email '${email}'',{type:querytypes.select);
         return result;
     }catch(error){
         throw error;
