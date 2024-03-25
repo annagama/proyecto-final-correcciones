@@ -1,4 +1,4 @@
-const hg= require('..db\index.js');
+const db= require('..db\index.js');
 const { querytypes } = require("sequelize");
 
 const getorderuserinprocess = ( current_user) => {
