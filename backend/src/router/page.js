@@ -1,0 +1,10 @@
+const {Router}=require("express");
+const pagecontroller=require('..src\controllers\pagecontroller.js');
+const router=Router();
+router.get("/", PageController.home);
+router.get("/home", PageController.home);
+router.get("/signup", PageController.signup);
+router.get("/login", PageController.login);
+router.get("/carrito", PageController.carrito);
+router.get("/producto/:id", PageController.producto);
+module.exports = router;
