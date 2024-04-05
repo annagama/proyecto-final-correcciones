@@ -1,27 +1,23 @@
 import React, { useState } from 'react';
 import { Form, Input, InputNumber, Select, Button } from 'antd';
 import { useCategory } from '../../hooks/useCategoria';
-import { useMarca } from '../../hooks/useMarca';
 import {errorModal, confirmMessage} from '../../Utilities/Utilities';
 import axios from 'axios';
 const { Option } = Select;
 const inputStyle = { width: '400px' };
 const NuevoProducto = () => {
     const { categorias } = useCategory();
-    const { marcas } = useMarca();
     const [form] = Form.useForm();
     const [formData, setFormData] = useState({
         vnombre: '',
         tdescripcion: '',
         fprecio: '',
-        nmarca: '',
         idcategoria: '',
         ncantidad: ''
     });
     const [submittable, setSubmittable] = React.useState(false);
     const handleFormSubmit = async (vObj) => {
         try {
-            vObj.id_marca = vObj.nmarca;
             form.resetFields()
             const response = await axios.post('/Api/product/addProduct', vObj);
             if (response.status === 200) {
@@ -38,7 +34,6 @@ const NuevoProducto = () => {
                     vnombre: '',
                     tdescripcion: '',
                     fprecio: '',
-                    nmarca: '',
                     idcategoria: '',
                     ncantidad: ''
                 });
