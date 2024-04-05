@@ -1,0 +1,8 @@
+.precio-tachado {
+    text-decoration: line-through; 
+}
+  
+.precio-oferta {
+    color: red; 
+    font-weight: bold;
+}
