@@ -19,7 +19,7 @@ const NuevoProducto = () => {
     const handleFormSubmit = async (vObj) => {
         try {
             form.resetFields()
-            const response = await axios.post('/Api/product/addProduct', vObj);
+            const response = await axios.post('backend/src/model/productomodel.js', vObj);
             if (response.status === 200) {
                 const vObjData = await response.data;
                 const modal = confirmMessage(vObjData.message);
@@ -80,16 +80,7 @@ return (
                         </Form.Item>
                     </label>
 
-                </div>
-                <div style={{display: 'flex', gap: '1rem'}}>
-                    <label htmlFor="">Marca:
-                        <Form.Item name="nmarca" rules={[{ required: true, message: 'Por favor selecciona la marca' }]}>
-                            <Select style={{ width: '180px'}} onChange={(value) => setFormData({ ...formData, nmarca: value })}>
-                                {marcas.map((marca) => (
-                                    <Option key={marca.id_marca} value={marca.id_marca}>
-                                        {marca.vmarca}
-                                    </Option>
-                                ))}
+              
                             </Select>
                         </Form.Item>
                     </label>
