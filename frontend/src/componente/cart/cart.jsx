@@ -7,7 +7,7 @@ import { DeleteFilled } from '@ant-design/icons';
 import Sider from 'antd/es/layout/Sider';
 import { Content } from 'antd/es/layout/layout';
 import UserDescription from '../User/UserDescription';
-import DescriptionTeach from '../DescriptionTeach/DescriptionTeach';
+import Descriptionguembe from '../Descriptionguembe/Descriptionguembe';
 import Confirm from '../ModalConfirm/Confirm';
 import axios from 'axios';
 
