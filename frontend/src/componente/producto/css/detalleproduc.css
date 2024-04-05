@@ -1,0 +1,33 @@
+.section-detail {   
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-detail h1 {
+    font-family: 'Josefina Sans', sans-serif;
+    padding-bottom: 0.5rem;
+    text-align: left; 
+}
+
+.section-detail figure {
+    text-align: center; 
+}
+
+.section-detail img {
+    max-width: 60%;
+    height: auto;
+}
+.section-detail h3{
+    font-family: 'Josefina Sans', sans-serif;
+    border-bottom: 1px solid #65D690;
+}
+
+
+.section-detail p {
+    text-align: justify;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
