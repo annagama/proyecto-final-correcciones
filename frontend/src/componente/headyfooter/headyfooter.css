@@ -1,0 +1,64 @@
+#navbar{
+    widht: 100% ;
+    height: 88px;
+    display: flex;
+    align-item:center;
+    justify-content: space-between;
+    background-color: #65D690;
+    background-image: url(Ellipse 1.png);
+    padding-bottom: 0 22px;
+    box-sizing: padding-box;
+    position: fixed;
+    bottom: auto;
+}
+#alinear{
+    widht: 35px;
+    height: 36px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+#imgp{
+     widht: 35px;
+    height: 36px;
+}
+ #btn{
+    margin: 0 5px;
+   width: 76px;
+    height: 22px;
+    flex-shrink: 0;
+    border: 5px solid rgba(169, 214, 124, 0.50);
+    background: rgba(169, 214, 124, 0.50);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    bottom: auto;
+    align-content: center;
+}
+ #content{
+     widht: 100%;
+    height: 604px;
+    display: flex;
+    align-item: center;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+  }
+
+#columna{
+ margin: 0 5px;
+ column-rule-style: none;
+ list-style: none;
+ column-span: none;
+ list-style-position: inside;
+
+
+}
+
+#footer{
+    widht: 100% ;
+    height: 88px;
+    class="imgp"
+    display: flex;
+    align-item: center;
+    justify-content: space-around;
+    background-color: #65D690;
+ }
