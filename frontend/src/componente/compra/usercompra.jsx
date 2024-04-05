@@ -15,7 +15,7 @@ const UserCompra = () => {
   useEffect(() => {
     const fetchNotificacionProcesada = async () => {
       try {
-        const response = await axios.get('/Api/pedido/notificacionProcesada');
+        const response = await axios.get('backend/src/model/viewordencompra.js');
        
         console.log('Notificación procesada:', response.data);
         
