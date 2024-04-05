@@ -19,32 +19,16 @@ const siderStyle = {
     textAlign: 'center',    
     color: 'black',
 
-    backgroundColor: '#F0F3F5',
+    backgroundColor: '#65D690',
   };
 
 const DetailProduct = () => {
     const { id } = useParams();
     const [productDetails, setProductDetails] = useState(null);
-    const [comentarios, setComentarios] = useState([]);
     const [error, setError] = useState(null);
     const current_user = useUserStore();
     const [form] = Form.useForm();
-    const [comentario, setNewComentario] = useState({
-      rate: 'undefined',
-      comment: '',
-    });
-    const [submittable, setSubmittable] = React.useState(false);
-
-    const onFinish = async () => {
-        try {
-            
-       
-          const response = await axios.post('/Api/product/addComentario', {
-            id_producto: id,
-            nrate: comentario.rate,
-            tcomentario: comentario.comment,
-          });
-         
+      rate: 'undefined' 
           if (response.status === 200) {
            
             const modal = confirmMessage(`${response.data.msg}`);    
@@ -52,14 +36,10 @@ const DetailProduct = () => {
             await new Promise(resolve => {
                 setTimeout(() => {
                     modal.destroy();
-                    form.resetFields();
-                    setComentarios(response.data.data)
+                    form.resetFields()
                     resolve();
                 }, 2000);
             });
-
-           
-           
             
           } else {
             errorModal(error.response.data.msg);
@@ -82,17 +62,6 @@ const DetailProduct = () => {
             throw error; 
         }
     };
-
- 
-
-    const siderWidth = comentarios.length > 0 ? '40%' : '60%';
-
-    const getComentariosById = async() => {
-        const respComentarios = await axios.get(`/Api/product/getComentariosById/${id}`);
-        const comentarios = await respComentarios.data;
-        return comentarios;
-    }
-
     const values = Form.useWatch([], form);
 
     useEffect(() => {
@@ -141,32 +110,6 @@ const DetailProduct = () => {
                                     </Descriptions.Item>
                                 </Descriptions>
                             )}
-                        </div>                        
-                        <Layout>
-                            {comentarios.length > 0 ? (<Content style={contentStyle}> 
-                            <List
-                            style={{ maxHeight: '290px', overflowY: 'auto' }}
-                            itemLayout="horizontal"
-                            dataSource={comentarios}
-                            renderItem={(item, index) => (
-                            <List.Item>
-                                <List.Item.Meta
-                                  title={
-                                    <div  style={{ textAlign: 'justify'}}>
-                                        <Avatar src={`https://api.dicebear.com/7.x/miniavs/svg?seed=${index}`} />
-                                        <span style={{ marginRight: '8px' }}>{item.vnombre}</span>
-                                        <Rate disabled value={item.nrate} />
-                                    </div>
-                                  }
-                                  description={
-                                    <div style={{ textAlign: 'justify', maxWidth: '70%' }}>
-                                      {item.tcomentario}
-                                    </div>
-                                  }
-                                />
-                              </List.Item>
-                            )}
-                            /></Content>) : <div style={{background: 'white'}}>No hay comentarios del producto aun</div>}
                             
                             {current_user.isLogged && !current_user.usuario.administrador ? ( <Sider width={siderWidth} style={siderStyle}>
                                 <Form
