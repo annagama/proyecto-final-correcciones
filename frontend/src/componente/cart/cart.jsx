@@ -40,7 +40,7 @@ const Cart = () => {
     setIsSpinning(true);
 
     try {
-      const response = await axios.post('/Api/pedido/generarPedido', {
+      const response = await axios.post('backend/src/model/viewpedidomodel.js', {
         id_orden_compra: cartProduct[0].id_orden_compra,
         ftotal: envio ? precioTotal + 6000 : precioTotal,
         benvio: envio,
