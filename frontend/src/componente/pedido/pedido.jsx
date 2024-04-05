@@ -15,7 +15,7 @@ const pedidos = () => {
     const procesarPedido = async (idPedido) => {
         try {
         
-            const response = await axios.post(`/Api/pedido/procesarPedido/${idPedido}`);
+            const response = await axios.post(`backend/src/model/pedido.js`);
          
           if (response.status === 200) {
             const infoResponse = await response.data;   
