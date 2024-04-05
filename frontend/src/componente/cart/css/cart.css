@@ -1,0 +1,71 @@
+.navbar{
+    widht: 100% ;
+    height: 88px;
+    display: flex;
+    align-item:center;
+    justify-content: space-between;
+    background-color: #65D690;
+    background-image: url(Ellipse 1.png);
+    padding-bottom: 0 22px;
+    box-sizing: padding-box;
+    position: fixed;
+    bottom: auto;
+  .cart {
+    width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+}
+
+.product-quantity {
+    margin-right: 6rem;  
+}
+
+.unavailable-row {
+    background-color:#65D690;
+    color:#FFFFFF ; 
+  }
+  
+
+.cart-header {
+    display: flex;    
+    justify-content: space-evenly;     
+    font-weight: bold;
+}
+
+.cart-header-quantity {
+    margin-left: 40rem;
+}
+
+.cart-header-title {
+    display: flex;
+    align-items: center;
+}
+
+.columna{
+ margin: 0 5px;
+ column-rule-style: none;
+ list-style: none;
+ column-span: none;
+ list-style-position: inside;
+
+
+}
+
+.footer{
+    widht: 100% ;
+    height: 88px;
+    class="imgp"
+    display: flex;
+    align-item: center;
+    justify-content: space-around;
+    background-color: #65D690;
+}
+.cart-precio-final li{
+    font-weight: bold;
+    font-size: medium;
+}
