@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import '../Cart/css/Cart.css';
+import '../cart/css/cart.css';
 import { Button, Image, Layout, Result, Switch, Table, Modal } from 'antd';
 import { Link, useNavigate } from 'react-router-dom';
-import { useCartStore } from '../../Store/useCartStore';
+import { useCartStore } from '..tienda/carrito-tienda.jsx';
 import { DeleteFilled } from '@ant-design/icons';
 import Sider from 'antd/es/layout/Sider';
 import { Content } from 'antd/es/layout/layout';
-import UserDescription from '../User/UserDescription';
+import UserDescription from '../user/user';
 import Descriptionguembe from '../Descriptionguembe/Descriptionguembe';
 import Confirm from '../ModalConfirm/Confirm';
 import axios from 'axios';
