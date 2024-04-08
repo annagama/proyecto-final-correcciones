@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { useUserStore } from '../Store/useUserStore';
+import { useUserStore } from '..tienda/user-tienda.jsx';
 import axios from 'axios';
-import {errorModal, confirmMessage} from '../Utilities/Utilities';
+import {errorModal, confirmMessage} from '../utili/utili.jsx';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -85,7 +85,7 @@ const useSignUpForm = () => {
 
 
   const signUp = async (formData) => {    
-      const response = await axios.post('/user/signUp', formData);      
+      const response = await axios.post('/user/signup', formData);      
       return response;
 
   };
