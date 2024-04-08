@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import useCompraUser from '../../hooks/useCompraUsuario';
-import { useUserStore } from '../../Store/useUserStore';
+import useCompraUser from '../../hooks/usecompra';
+import { useUserStore } from '..tienda/carrito-tienda.jsx';
 import { Table, Space, Collapse } from 'antd';
 import axios from 'axios';
 
