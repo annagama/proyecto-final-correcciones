@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Modal,  List, Avatar, Image} from 'antd';
 import { DeleteFilled } from '@ant-design/icons';
-import { useCartStore } from '../../Store/useCartStore';
+import { useCartStore } from '..tienda/carrito-tienda.jsx';
 import { Link, useNavigate } from 'react-router-dom';
 const ModalCartPreview = ({ isVisible, closeModal, cartDetail }) => {
   const deleteProduct = useCartStore((s) => s.deleteProduct);
