@@ -9,7 +9,7 @@ export const useCategory = () => {
     }, [])
     
     const loadCategory = async () => {
-        const resp = await axios.get('')
+        const resp = await axios.get('backend/src/controllers/categoria.js')
         const category = await resp.data;
         setCategoria(category.data)
     }
