@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import axios from "axios";
-import {errorModal, confirmMessage} from '../Utilities/Utilities';
+import {errorModal, confirmMessage} from '../utili/utili.jsx';
 
 export const useCartStore = create((set) => ({
   cart: [],
