@@ -1,8 +1,8 @@
 // uselogin.js
 import { useState } from 'react';
 import axios from 'axios';
-import { useUserStore } from '../Store/useUserStore';
-import {errorModal, confirmMessage} from '../Utilities/Utilities';
+import { useUserStore } from '../tienda/user-tienda.jsx';
+import {errorModal, confirmMessage} from '..utili/utili.jsx';
 import { useNavigate } from 'react-router-dom';
 
 const useLoginForm = () => {
