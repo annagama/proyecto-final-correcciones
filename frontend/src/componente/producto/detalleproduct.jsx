@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Image, Alert, Layout, List, Avatar, Rate, Button, Form, Input } from 'antd';
 import { Descriptions } from 'antd';
-import { disponibilidadStock, confirmMessage, errorModal } from '../../Utilities/Utilities';
+import { disponibilidadStock, confirmMessage, errorModal } from '../../utili/utili';
 import './css/DetailProduct.css';
 import axios from 'axios';
 import { Content } from 'antd/es/layout/layout';
-import { useUserStore } from '../../Store/useUserStore';
-import Sider from 'antd/es/layout/Sider';
+import { useUserStore } from '../../tienda/carrito-tienda';
+import Sider from 'antd/es/layout/sider';
 
 const contentStyle = {
     textAlign: 'center',
