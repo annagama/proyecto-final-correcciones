@@ -1,6 +1,6 @@
 import React from 'react';
 import { Descriptions } from 'antd';
-import { useUserStore } from '../../Store/useUserStore';
+import { useUserStore } from '../../tienda/carrito-tienda';
 
 
 
