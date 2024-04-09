@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import '../Headers-Footer/css/header-footer.css';
 import { Link, useLocation } from 'react-router-dom';
-import { useUserStore } from '../../Store/useUserStore';
+import { useUserStore } from '../../tienda/user-tienda';
 import { FacebookOutlined, InstagramOutlined, ShoppingCartOutlined, TwitterOutlined, WhatsAppOutlined } from '@ant-design/icons';
-import { useCartStore } from '../../Store/useCartStore';
-import ModalCartPreview from '../Cart/ModalCartPreview';
+import { useCartStore } from '../../tienda/carrito-tienda';
+
 
 function Footer() {
 
