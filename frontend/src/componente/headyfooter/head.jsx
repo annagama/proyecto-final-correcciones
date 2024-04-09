@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import '../Headers-Footer/css/header-footer.css';
+import '../headyfooter/headyfooter.css';
 import {Link, useNavigate} from "react-router-dom";
 import { Button, Dropdown, Modal, Space } from 'antd';
 import { DownOutlined, ExclamationCircleOutlined, ExclamationOutlined, HeartFilled } from '@ant-design/icons';
-import { useUserStore } from '../../Store/useUserStore';
-import { useCartStore } from '../../Store/useCartStore';
-import usePedidosSinProcesarStore from '../../hooks/usePedidoSinProcesar';
-import { useFavStore } from '../../Store/useFavStore';
-import useCompraUser from '../../hooks/useCompraUsuario';
+import { useUserStore } from '../../tienda/user-tienda';
+import { useCartStore } from '../../tienda/carrito-tienda';
+import useCompraUser from '../../hooks/usecomprausuario';
 
 function Header() {
 
