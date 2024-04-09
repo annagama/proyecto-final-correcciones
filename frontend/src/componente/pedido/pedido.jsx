@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Avatar, Button, Table, Tooltip } from 'antd';
-import { usePedidos } from '../../hooks/usePedidos';
-import {errorModal, confirmMessage} from '../../Utilities/Utilities';
+import { usePedidos } from '../../hooks/usepedidos';
+import {errorModal, confirmMessage} from '../../utili/utili';
 import axios from 'axios';
 import { ZoomInOutlined } from '@ant-design/icons';
 import PedidoModal from './pedidoModal';
