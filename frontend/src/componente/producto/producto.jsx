@@ -2,10 +2,10 @@ import React from 'react';
 import { Button, Card, Image, Tooltip } from 'antd';
 import './css/Product.css'
 import { ShoppingCartOutlined, EyeOutlined, HeartOutlined } from '@ant-design/icons'; // Importar iconos de Ant Design
-import { cortarTexto, mostrarPrecio, disponibilidadStock } from '../../Utilities/Utilities';
+import { cortarTexto, mostrarPrecio, disponibilidadStock } from '../../utili/utili';
 import {Link} from "react-router-dom";
-import { useUserStore } from '../../Store/useUserStore';
-import { useCartStore } from '../../Store/useCartStore';
+import { useUserStore } from '../../tienda/carrito-tienda';
+import { useCartStore } from '../../tienda/user-tienda';
 const cardStyle = {
   width: '15rem',
 };
