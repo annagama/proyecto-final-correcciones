@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Input, InputNumber, Select, Button } from 'antd';
-import { useCategory } from '../../hooks/useCategoria';
-import {errorModal, confirmMessage} from '../../Utilities/Utilities';
+import { useCategory } from '../../hooks/usecategoria';
+import {errorModal, confirmMessage} from '../../utili/utili';
 import axios from 'axios';
 const { Option } = Select;
 const inputStyle = { width: '400px' };
