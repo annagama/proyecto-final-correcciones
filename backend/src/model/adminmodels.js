@@ -1,4 +1,4 @@
-const db=require('..db\index.js');
+const db=require('..db\index');
 const{querytypes}=require("sequelize");
 const getadmin=async(email)=>{
     try{
