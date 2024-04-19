@@ -1,5 +1,5 @@
 const {Router}=require("express");
-const pagecontroller=require('..src\controllers\pagecontroller.js');
+const pagecontroller=require('..src\controllers\pagecontroller');
 const router=Router();
 router.get("/", PageController.home);
 router.get("/home", PageController.home);
