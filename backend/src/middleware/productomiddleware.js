@@ -1,6 +1,6 @@
 const{body}=require("express-validator");
 
-const{getcategoria}=require('..src\models\categoriamodel.js');
+const{getcategoria}=require('..src\models\categoriamodel');
 const validatenome=body("vnombre")
 .notempty()
 .withmessage("se requiere nombre")
