@@ -1,7 +1,7 @@
 const { Router } = require('express');
-const ProductController = require('..src\controllers\producto.js')
+const ProductController = require('..src\controllers\producto')
 const { validarErrores } = require('..src\middlewares');
-const { idRequired } = require('..src\middlewares\paramsmiddleware.js');
+const { idRequired } = require('..src\middlewares\paramsmiddleware');
 const { validateName, validateDescription, validatePrice, validateBrand, validateCategoria, existCategoria, existMarca } = require('../Middlewares/ProductMiddleware');
 const { checkSessionAdmin, checkSession } = require('.src')
 const ProductRouter = Router();
