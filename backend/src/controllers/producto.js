@@ -1,5 +1,5 @@
-const productmodel=require('..src\models\productomodel.js');
-const viewproductmodel= require('..src\models\viewproductomodel.js');
+const productmodel=require('..src\models\productomodel');
+const viewproductmodel= require('..src\models\viewproductomodel');
 const getall=async(req,res)=>{
     try{
         const product=await viewproductmodel.getall();
