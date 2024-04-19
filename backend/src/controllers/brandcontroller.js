@@ -1,4 +1,4 @@
-const BrandModel = require('..src\models\brandmodel.js');
+const BrandModel = require('..src\models\brandmodel');
 const getall = async (req, res) => {    
     try {
         const brand = await BrandModel.getall();
