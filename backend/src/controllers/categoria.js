@@ -1,4 +1,4 @@
-const CategoriaModel = require('..src/models/categoriamodel.js');
+const CategoriaModel = require('..src/models/categoriamodel');
 const getCategorias = async (req, res) => {
     try {
         const categorias = await CategoriaModel.getCategorias();
