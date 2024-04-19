@@ -1,4 +1,4 @@
-const productModel = require('..src\models\categoriamodel.js');
+const productModel = require('..src\models\categoriamodel');
 
 const checkCantidadesProducto = async (req, res, next) => {
 
