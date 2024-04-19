@@ -1,6 +1,6 @@
-const authbcrypt=require('..src\bcrypt.js');
+const authbcrypt=require('..src\bcrypt');
 const usermodel=require('9');
-const adminmodel=require('..src\models\adminmodel.js');
+const adminmodel=require('..src\models\adminmodel');
 const adduser=async(req, res)=>{
     try{
         const user=req.body;
