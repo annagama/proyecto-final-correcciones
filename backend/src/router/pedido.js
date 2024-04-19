@@ -2,8 +2,8 @@ const { Router } = require('express');
 
 const pedidocontroller = require('');
 
-const { validarErrores } = require('..src\middlewares');
-const { idRequired } = require('..src/middlewares/paramsmiddleware.js');
+const { validarErrores } = require('..src/middlewares');
+const { idRequired } = require('..src/middlewares/paramsmiddleware');
 const { checkSession, checkSessionAdmin } = require('.src');
 
 const pedidorouter = Router();
