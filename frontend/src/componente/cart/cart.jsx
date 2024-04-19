@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../cart/css/cart.css';
 import { Button, Image, Layout, Result, Switch, Table, Modal } from 'antd';
 import { Link, useNavigate } from 'react-router-dom';
-import { useCartStore } from '..tienda/carrito-tienda.jsx';
+import { useCartStore } from '..tienda/carrito-tienda';
 import { DeleteFilled } from '@ant-design/icons';
 import Sider from 'antd/es/layout/Sider';
 import { Content } from 'antd/es/layout/layout';
@@ -40,7 +40,7 @@ const Cart = () => {
     setIsSpinning(true);
 
     try {
-      const response = await axios.post('backend/src/model/viewpedidomodel.js', {
+      const response = await axios.post('backend/src/model/viewpedidomodel', {
         id_orden_compra: cartProduct[0].id_orden_compra,
         ftotal: envio ? precioTotal + 6000 : precioTotal,
         benvio: envio,
