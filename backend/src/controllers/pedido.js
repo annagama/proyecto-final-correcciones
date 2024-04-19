@@ -1,7 +1,7 @@
-const pedidomodel=requiere('..src\models\pedidomodel.js');
-const carritomodel = require('..src\models\carritomodel.js');
-const viewpedidomodel = require('..src/models/viewpedidomodel.js');
-const viewordenarcompraarticulo = require('..src/models/viewcompraarticulo.js');
+const pedidomodel=requiere('..src\models\pedidomodel');
+const carritomodel = require('..src\models\carritomodel');
+const viewpedidomodel = require('..src/models/viewpedidomodel');
+const viewordenarcompraarticulo = require('..src/models/viewcompraarticulo');
 const getall = async (req, res) => {
     try {
         const pedidos = await viewpedidomodel.getpedidos();
