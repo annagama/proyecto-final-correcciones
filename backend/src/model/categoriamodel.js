@@ -1,4 +1,4 @@
-const db=('..db\index.js');
+const db=('..db\index');
 const{querytype}=require("sequelize");
 const getcategoria=()=>{
     return db.query('select * from categoria',{
