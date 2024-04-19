@@ -1,16 +1,16 @@
 import React from 'react';
-import Header from './componente/headyfooter/head.jsx';
-import Footer from './componente/headyfooter/footer.jsx';
+import Header from './componente/headyfooter/head';
+import Footer from './componente/headyfooter/footer';
 import './app.css';
-import LogIn from './componente/login/login.jsx';
-import SignUp from './componente/login/singin.jsx';
-import Cart from './componente/cart/cart.jsx';
+import LogIn from './componente/login/login';
+import SignUp from './componente/login/singin';
+import Cart from './componente/cart/cart';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import DetailProduct from './componente/producto/detalleproduct.jsx';
-import { useUserStore } from './tienda/user-tienda.jsx';
-import Pedidos from './componente/pedido/pedido.jsx';
-import ErrorPage from './componente/errorpag/error.jsx';
-import UserCompra from './componente/compra/usercompra.jsx';
+import DetailProduct from './componente/producto/detalleproduct';
+import { useUserStore } from './tienda/user-tienda';
+import Pedidos from './componente/pedido/pedido';
+import ErrorPage from './componente/errorpag/error';
+import UserCompra from './componente/compra/usercompra';
 
 
 function App() {
