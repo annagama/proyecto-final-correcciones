@@ -9,7 +9,7 @@ const PedidoModal = ({ visible, pedido, onClose }) => {
     const cargarDetallesPedido = async () => {
       try {
         
-        const response = await axios.get(`backend/src/model/pedido.js`);
+        const response = await axios.get(`backend/src/model/pedido`);
         if (response.status === 200) {
           setDetallesPedido(response.data.data);
         }
