@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import useCompraUser from '../../hooks/usecompra';
-import { useUserStore } from '..tienda/carrito-tienda.jsx';
+import { useUserStore } from '../../tienda/carrito-tienda';
 import { Table, Space, Collapse } from 'antd';
 import axios from 'axios';
 
@@ -15,7 +15,7 @@ const UserCompra = () => {
   useEffect(() => {
     const fetchNotificacionProcesada = async () => {
       try {
-        const response = await axios.get('backend/src/model/viewordencompra.js');
+        const response = await axios.get('backend/src/model/viewordencompra');
        
         console.log('Notificación procesada:', response.data);
         
