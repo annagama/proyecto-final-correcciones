@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { useUserStore } from '..tienda/user-tienda';
+import { useUserStore } from '../../tienda/user-tienda';
 import axios from 'axios';
-import {errorModal, confirmMessage} from '../utili/utili';
+import {errorModal, confirmMessage} from '../../utili/utili';
 import { useNavigate } from 'react-router-dom';
 
 
