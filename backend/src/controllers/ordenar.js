@@ -1,7 +1,7 @@
-const CarritoModel = require('..src\models\carritomodel.js');
-const OrdenCompraArticuloModel = require('..src\models\compraarticulocontroll.js');
-const ViewOrdenCompraXArticuloModel = require('..src\models\viewcompraarticulo.js');
-const ViewProductModel = require('src\models\viewproductomodel.js');
+const CarritoModel = require('..src\models\carritomodel');
+const OrdenCompraArticuloModel = require('..src\models\compraarticulocontroll');
+const ViewOrdenCompraXArticuloModel = require('..src\models\viewcompraarticulo');
+const ViewProductModel = require('src\models\viewproductomodel');
 
 const addcarrito= async (req, res) => {
     try {
